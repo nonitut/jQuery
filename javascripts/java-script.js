@@ -24,3 +24,14 @@ $(document).ready(function(){
        $(".ril").css("background-color","pink");
 });
 });
+
+$(document).ready(function(){
+	$("div").click(function(){
+		$(this).css({
+			width: function(index, value) {
+				return parseFloat (value) +100;
+			}
+		});
+	});
+});
+//добавление объема к заданному значению
