@@ -7,12 +7,14 @@ $(document).ready(function() {
   // в документе html мы находим функцию, с айди #demo и передаем через html  слово Hello, World!, то есть текст написан в js
   //сначала нашли айди которое заранее написали, потом функцию написали, html("Hello, World!") - можем написать переменную в  js
   //внимательно следите за скобками
+  //.ready(function(){ дожидается, что страница прогрузит, и после js будет приступать к своей работе
 
     $(document).ready(function(){
       $("div").click(function(){
         $(this).addClass("black");
       });
     }); // при клике на див наша функция начинает работать - меняет цвет на черный
+
     $(document).ready(function(){
 	     $(".blue").click(function(){
 		       $(this).css("background-color","orange");
@@ -35,3 +37,9 @@ $(document).ready(function(){
 	});
 });
 //добавление объема к заданному значению width
+
+$(document).ready(function(){
+	$("div").click(function(){
+    	$(this).toggleClass("black");
+  });
+}); // если класс есть он его добавляет, если нет то убирает
