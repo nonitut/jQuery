@@ -29,9 +29,9 @@ $(document).ready(function(){
 	$("div").click(function(){
 		$(this).css({
 			width: function(index, value) {
-				return parseFloat (value) +100;
+				return parseFloat (value) +100; // можно *1.1; можно писать если опр значение
 			}
 		});
 	});
 });
-//добавление объема к заданному значению
+//добавление объема к заданному значению width
