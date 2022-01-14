@@ -24,3 +24,14 @@ $(document).ready(function(){
        $(".ril").css("background-color","pink");
 });
 });
+
+$(document).ready(function(){
+	$("div").click(function(){
+		$(this).css({
+			width: function(index, value) {
+				return parseFloat (value) +100; // можно *1.1; можно писать если опр значение
+			}
+		});
+	});
+});
+//добавление объема к заданному значению width
